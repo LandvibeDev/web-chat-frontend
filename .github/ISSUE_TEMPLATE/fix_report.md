@@ -1,5 +1,5 @@
 ---
-name: Fix issue template
+name: 기능 수정
 about: 수정할 기능과 방안 서술하는 템플릿 
 title: ''
 labels: fix
