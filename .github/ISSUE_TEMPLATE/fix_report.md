@@ -1,8 +1,8 @@
 ---
-name: Refactoring issue template
-about: 기존 기능을 수정하기 위한 이슈 템플릿
+name: Fix issue template
+about: 수정할 기능과 방안 서술하는 템플릿 
 title: ''
-labels: ''
+labels: fix
 assignees: ''
 
 ---
