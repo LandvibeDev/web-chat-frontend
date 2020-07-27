@@ -1,6 +1,6 @@
 ---
-name: Bug report
-about: Create a report to help us improve
+name: 버그 리포트
+about: 버그 시나리오, 해결 방안을 서술하는 템플릿 
 title: ''
 labels: bug
 assignees: ''
@@ -22,6 +22,8 @@ A clear and concise description of what the bug is.
 
 ## 🏠 기존에 기대했던 동작
 A clear and concise description of what you expected to happen.
+
+## 🌱 해결 방안
 
 ## 🏗 추가 이슈
 Add any other context about the problem here.
