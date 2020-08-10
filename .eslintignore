@@ -1,0 +1,4 @@
+build/*
+src/serviceWorker.js
+src/setupTests.js
+.eslintrc.js
