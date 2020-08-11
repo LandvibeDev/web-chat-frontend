@@ -4,14 +4,14 @@ import {
     Route,
     Switch
 } from 'react-router-dom';
-import { ChatConstructor, ChatRoomDashboard } from './components/pages';
+import { RoomMaker, RoomBoard } from './pages/rooms';
 
 function App() {
     return (
         <BrowserRouter>
-            <Route exact path="/" component={ChatRoomDashboard} />
+            <Route exact path="/" component={RoomBoard} />
             <Switch>
-                <Route path="/rooms" component={ChatConstructor} />
+                <Route path="/rooms" component={RoomMaker} />
             </Switch>
         </BrowserRouter>
     );
