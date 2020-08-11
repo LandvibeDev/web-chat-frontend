@@ -9,9 +9,9 @@ import { RoomMaker, RoomBoard } from './pages/rooms';
 function App() {
     return (
         <BrowserRouter>
-            <Route exact path="/" component={RoomBoard} />
+            <Route exact path="/" component={RoomMaker} />
             <Switch>
-                <Route path="/rooms" component={RoomMaker} />
+                <Route path="/rooms" component={RoomBoard} />
             </Switch>
         </BrowserRouter>
     );
