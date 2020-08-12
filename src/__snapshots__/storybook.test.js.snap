@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots pages/rooms/board Standard 1`] = `<div />`;
+
+exports[`Storyshots pages/rooms/maker Standard 1`] = `<div />`;
