@@ -1,5 +1,5 @@
-import RoomMaker from './board';
-import RoomBoard from './maker';
+import RoomBoard from './board';
+import RoomMaker from './maker';
 
 export {
     RoomMaker, RoomBoard

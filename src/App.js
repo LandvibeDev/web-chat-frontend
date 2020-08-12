@@ -1,10 +1,6 @@
 import React from 'react';
-import {
-    BrowserRouter,
-    Route,
-    Switch
-} from 'react-router-dom';
-import { RoomMaker, RoomBoard } from './pages/rooms';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { RoomBoard, RoomMaker } from './pages/rooms';
 
 function App() {
     return (
