@@ -80,10 +80,10 @@ exports[`Storyshots components/atoms/Text Block 1`] = `
 
 exports[`Storyshots components/atoms/Text Standard 1`] = `
 <div
-  className="sc-AxiKw htnJFi"
+  className="sc-AxiKw hflhNR"
   color="black"
   display="inline"
-  fontSize="1.6rem"
+  fontSize="1.5rem"
   height="100%"
   width="100%"
 >
@@ -93,7 +93,7 @@ exports[`Storyshots components/atoms/Text Standard 1`] = `
 
 exports[`Storyshots components/molecules/Panel Big 1`] = `
 <div
-  className="sc-AxhUy jLCLob"
+  className="sc-AxhCb dnSdxi"
   color="white"
   display="block"
   width="80%"
@@ -113,7 +113,7 @@ exports[`Storyshots components/molecules/Panel Big 1`] = `
 
 exports[`Storyshots components/molecules/Panel Standard 1`] = `
 <div
-  className="sc-AxhUy eMBeLH"
+  className="sc-AxhCb imTJZC"
   color="white"
   display="block"
   width="40%"
@@ -133,7 +133,7 @@ exports[`Storyshots components/molecules/Panel Standard 1`] = `
 
 exports[`Storyshots components/organisms/Text Standard 1`] = `
 <div
-  className="sc-AxgMl jUPhGp"
+  className="sc-AxhUy folrDj"
 >
   <a
     className="sc-AxirZ enSoJa"
@@ -155,7 +155,7 @@ exports[`Storyshots pages/rooms/board Standard 1`] = `
   className="sc-AxmLO jkdtJG"
 >
   <div
-    className="sc-AxgMl jUPhGp"
+    className="sc-AxhUy folrDj"
   >
     <a
       className="sc-AxirZ enSoJa"
@@ -174,7 +174,7 @@ exports[`Storyshots pages/rooms/board Standard 1`] = `
     className="sc-AxheI ahnDd"
   >
     <div
-      className="sc-AxhCb dbAxHI"
+      className="sc-AxgMl kKvNSj"
     >
       <div
         className="sc-AxiKw hittsh"
@@ -188,7 +188,7 @@ exports[`Storyshots pages/rooms/board Standard 1`] = `
       </div>
     </div>
     <div
-      className="sc-AxhCb dbAxHI"
+      className="sc-AxgMl kKvNSj"
     >
       <div
         className="sc-AxiKw hittsh"
@@ -234,7 +234,7 @@ exports[`Storyshots pages/rooms/maker Standard 1`] = `
   className="sc-fzplWN jRYrxg"
 >
   <div
-    className="sc-AxgMl jUPhGp"
+    className="sc-AxhUy folrDj"
   >
     <a
       className="sc-AxirZ enSoJa"
@@ -253,7 +253,7 @@ exports[`Storyshots pages/rooms/maker Standard 1`] = `
     className="sc-fzpans kIaYxU"
   >
     <div
-      className="sc-AxhUy eMBeLH"
+      className="sc-AxhCb imTJZC"
       color="white"
       display="block"
       width="40%"
