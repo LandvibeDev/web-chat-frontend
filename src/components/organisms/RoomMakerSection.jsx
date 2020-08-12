@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
-import crateRooms from 'service/createRoom';
+import crateRooms from '../../service/createRoom';
 import Button from '../atoms/Button';
 import InputBox from '../molecules/InputBox';
 import Panel from '../molecules/Panel';

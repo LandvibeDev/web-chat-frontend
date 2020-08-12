@@ -1,5 +1,321 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots pages/rooms/board Standard 1`] = `<div />`;
+exports[`Storyshots components/atoms/Button Big 1`] = `
+<button
+  className="sc-AxjAm fuIMjL"
+  color="white"
+  display="block"
+  fontSize="1.5rem"
+  width="80%"
+>
+  채팅방 생성
+</button>
+`;
 
-exports[`Storyshots pages/rooms/maker Standard 1`] = `<div />`;
+exports[`Storyshots components/atoms/Button Button 1`] = `
+<button
+  className="sc-AxjAm fBWgvE"
+  color="white"
+  display="block"
+  fontSize="1.5rem"
+  onClick={[Function]}
+  width="100%"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots components/atoms/Button Standard 1`] = `
+<button
+  className="sc-AxjAm jGWHdT"
+  color="white"
+  display="block"
+  fontSize="1.5rem"
+  width="80%"
+>
+  생성
+</button>
+`;
+
+exports[`Storyshots components/atoms/Linker Linker 1`] = `
+<a
+  className="sc-AxirZ iDtaKX"
+  color="#f2f6f5"
+  display="inline-block"
+  fontSize="1rem"
+  href="/"
+  margin="0"
+  onClick={[Function]}
+  text="test"
+>
+  test
+</a>
+`;
+
+exports[`Storyshots components/atoms/Text Big 1`] = `
+<div
+  className="sc-AxiKw fbTfNI"
+  color="black"
+  display="inline"
+  fontSize="3rem"
+  height="100%"
+  width="100%"
+>
+  Storybook
+</div>
+`;
+
+exports[`Storyshots components/atoms/Text Block 1`] = `
+<div
+  className="sc-AxiKw jMgEDB"
+  color="black"
+  display="block"
+  fontSize="2rem"
+  height="100%"
+  width="100%"
+>
+  Storybook
+</div>
+`;
+
+exports[`Storyshots components/atoms/Text Standard 1`] = `
+<div
+  className="sc-AxiKw htnJFi"
+  color="black"
+  display="inline"
+  fontSize="1.6rem"
+  height="100%"
+  width="100%"
+>
+  Storybook
+</div>
+`;
+
+exports[`Storyshots components/molecules/Panel Big 1`] = `
+<div
+  className="sc-AxhUy jLCLob"
+  color="white"
+  display="block"
+  width="80%"
+>
+  <div
+    className="sc-AxiKw jMgEDB"
+    color="black"
+    display="block"
+    fontSize="2rem"
+    height="100%"
+    width="100%"
+  >
+    채팅방 생성
+  </div>
+</div>
+`;
+
+exports[`Storyshots components/molecules/Panel Standard 1`] = `
+<div
+  className="sc-AxhUy eMBeLH"
+  color="white"
+  display="block"
+  width="40%"
+>
+  <div
+    className="sc-AxiKw jMgEDB"
+    color="black"
+    display="block"
+    fontSize="2rem"
+    height="100%"
+    width="100%"
+  >
+    채팅방 생성
+  </div>
+</div>
+`;
+
+exports[`Storyshots components/organisms/Text Standard 1`] = `
+<div
+  className="sc-AxgMl jUPhGp"
+>
+  <a
+    className="sc-AxirZ enSoJa"
+    color="#f2f6f5"
+    display="inline-block"
+    fontSize="5rem"
+    href="/"
+    margin="3rem"
+    onClick={[Function]}
+    text="HOME"
+  >
+    HOME
+  </a>
+</div>
+`;
+
+exports[`Storyshots pages/rooms/board Standard 1`] = `
+<div
+  className="sc-AxmLO jkdtJG"
+>
+  <div
+    className="sc-AxgMl jUPhGp"
+  >
+    <a
+      className="sc-AxirZ enSoJa"
+      color="#f2f6f5"
+      display="inline-block"
+      fontSize="5rem"
+      href="/"
+      margin="3rem"
+      onClick={[Function]}
+      text="HOME"
+    >
+      HOME
+    </a>
+  </div>
+  <section
+    className="sc-AxheI ahnDd"
+  >
+    <div
+      className="sc-AxhCb dbAxHI"
+    >
+      <div
+        className="sc-AxiKw hittsh"
+        color="black"
+        display="inline"
+        fontSize="2rem"
+        height="100%"
+        width="100%"
+      >
+        hello world
+      </div>
+    </div>
+    <div
+      className="sc-AxhCb dbAxHI"
+    >
+      <div
+        className="sc-AxiKw hittsh"
+        color="black"
+        display="inline"
+        fontSize="2rem"
+        height="100%"
+        width="100%"
+      >
+        hi
+      </div>
+    </div>
+    <button
+      className="sc-AxjAm jGWHdT"
+      color="white"
+      display="block"
+      fontSize="1.5rem"
+      onClick={[Function]}
+      width="80%"
+    >
+      채팅방 생성
+    </button>
+  </section>
+  <div
+    className="sc-Axmtr hDHYve"
+  >
+    <div
+      className="sc-AxiKw hittsh"
+      color="black"
+      display="inline"
+      fontSize="2rem"
+      height="100%"
+      width="100%"
+    >
+      Landvibe
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots pages/rooms/maker Standard 1`] = `
+<div
+  className="sc-fzplWN jRYrxg"
+>
+  <div
+    className="sc-AxgMl jUPhGp"
+  >
+    <a
+      className="sc-AxirZ enSoJa"
+      color="#f2f6f5"
+      display="inline-block"
+      fontSize="5rem"
+      href="/"
+      margin="3rem"
+      onClick={[Function]}
+      text="HOME"
+    >
+      HOME
+    </a>
+  </div>
+  <section
+    className="sc-fzpans kIaYxU"
+  >
+    <div
+      className="sc-AxhUy eMBeLH"
+      color="white"
+      display="block"
+      width="40%"
+    >
+      <div
+        className="sc-AxiKw jMgEDB"
+        color="black"
+        display="block"
+        fontSize="2rem"
+        height="100%"
+        width="100%"
+      >
+        채팅방 생성
+      </div>
+    </div>
+    <div
+      className="sc-fzoLsD cJBwGy"
+    >
+      <div
+        className="sc-AxiKw hittsh"
+        color="black"
+        display="inline"
+        fontSize="2rem"
+        height="100%"
+        width="100%"
+      >
+        이름
+      </div>
+      <input
+        className="sc-fzozJi bDSRrx"
+        display="inline"
+        height="100%"
+        onChange={[Function]}
+        onKeyPress={[Function]}
+        value=""
+        width="50%"
+      />
+    </div>
+    <button
+      className="sc-AxjAm jGWHdT"
+      color="white"
+      display="block"
+      fontSize="1.5rem"
+      onClick={[Function]}
+      width="80%"
+    >
+      생성
+    </button>
+  </section>
+  <div
+    className="sc-Axmtr hDHYve"
+  >
+    <div
+      className="sc-AxiKw hittsh"
+      color="black"
+      display="inline"
+      fontSize="2rem"
+      height="100%"
+      width="100%"
+    >
+      Landvibe
+    </div>
+  </div>
+</div>
+`;

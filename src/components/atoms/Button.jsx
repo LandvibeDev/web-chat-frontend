@@ -42,6 +42,7 @@ Button.propTypes = {
     padding: PropTypes.string,
     display: PropTypes.string,
     fontSize: PropTypes.string,
+    /** Hello 버튼 누를 때 호출할 함수 */
     backgroundColor: PropTypes.string,
     color: PropTypes.string
 };
