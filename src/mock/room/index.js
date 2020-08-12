@@ -1,12 +1,12 @@
 function getRooms(mock) {
-    mock.onGet('/rooms')
+    mock.onGet('/api/rooms')
         .reply(200, {
             rooms: [{ id: 1, text: 'hello world' }, { id: 2, text: 'hi' }]
         });
 }
 
 function createRooms(mock) {
-    mock.onPost('/rooms')
+    mock.onPost('/api/rooms')
         .reply(201, {
             id: 23, text: 'good'
         });
