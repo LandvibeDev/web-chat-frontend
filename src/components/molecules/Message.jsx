@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import Text from '../atoms/Text';
-import MessageTarget from '../../common/MessageTarget';
-import { isText } from '../../common/MessageType';
+import MessageTarget from 'common/MessageTarget';
+import { isText } from 'common/MessageType';
+import Text from 'components/atoms/Text';
 
 const StyledMessage = styled.div`
   width: 100%;

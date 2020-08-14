@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import Message from '../molecules/Message';
-import { chooseType } from '../../common/MessageTarget';
+import Message from 'components/molecules/Message';
+import { chooseType } from 'common/MessageTarget';
 
 const StyledConversation = styled.section`
   margin: 2em;

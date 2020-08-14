@@ -2,8 +2,8 @@ import React, {
     useCallback, useEffect, useReducer, useState
 } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
+import getMessages from 'service/getMessages';
 import ChatRoomTemplate from './templates';
-import getMessages from '../../../service/getMessages';
 
 function reducer(messages, actions) {
     const { type } = actions;

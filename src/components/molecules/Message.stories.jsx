@@ -1,7 +1,7 @@
 import React from 'react';
+import MessageTarget from 'common/MessageTarget';
+import MessageType from 'common/MessageType';
 import Message from './Message';
-import MessageTarget from '../../common/MessageTarget';
-import MessageType from '../../common/MessageType';
 
 export default {
     title: 'components/molecules/Message',
