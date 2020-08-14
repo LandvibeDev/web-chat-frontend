@@ -1,5 +1,126 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots components/atoms/Text Message Type 1`] = `
+<div
+  className="sc-AxjAm bvLBue"
+  fontSize="1.3rem"
+>
+  MessageType
+</div>
+`;
+
+exports[`Storyshots components/atoms/Text Standard 1`] = `
+<div
+  className="sc-AxjAm ZNZix"
+>
+  Standard
+</div>
+`;
+
+exports[`Storyshots components/molecules/Message Mine 1`] = `
+<div
+  className="sc-AxirZ hiMttf"
+>
+  <div
+    className="sc-AxjAm bvLBue"
+    fontSize="1.3rem"
+  >
+    Mine Message
+  </div>
+</div>
+`;
+
+exports[`Storyshots components/molecules/Message Theirs 1`] = `
+<div
+  className="sc-AxirZ dnufmQ"
+>
+  <div
+    className="sc-AxjAm bvLBue"
+    fontSize="1.3rem"
+  >
+    Theirs Message
+  </div>
+</div>
+`;
+
+exports[`Storyshots components/organisms/Conversation Standard 1`] = `
+<section
+  className="sc-AxiKw iXJgDm"
+>
+  <div
+    className="sc-AxirZ hiMttf"
+  >
+    <div
+      className="sc-AxjAm bvLBue"
+      fontSize="1.3rem"
+    >
+      hello world
+    </div>
+  </div>
+  <div
+    className="sc-AxirZ dnufmQ"
+  >
+    <div
+      className="sc-AxjAm bvLBue"
+      fontSize="1.3rem"
+    >
+      hi
+    </div>
+  </div>
+  <div
+    className="sc-AxirZ dnufmQ"
+  >
+    <div
+      className="sc-AxjAm bvLBue"
+      fontSize="1.3rem"
+    >
+      good
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Storyshots pages/chat/room/template Standard 1`] = `
+<div
+  className="sc-AxhCb eIZfwJ"
+>
+  <section
+    className="sc-AxiKw iXJgDm"
+  >
+    <div
+      className="sc-AxirZ hiMttf"
+    >
+      <div
+        className="sc-AxjAm bvLBue"
+        fontSize="1.3rem"
+      >
+        hello world
+      </div>
+    </div>
+    <div
+      className="sc-AxirZ dnufmQ"
+    >
+      <div
+        className="sc-AxjAm bvLBue"
+        fontSize="1.3rem"
+      >
+        hi
+      </div>
+    </div>
+    <div
+      className="sc-AxirZ dnufmQ"
+    >
+      <div
+        className="sc-AxjAm bvLBue"
+        fontSize="1.3rem"
+      >
+        good
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
 exports[`Storyshots pages/rooms/board Standard 1`] = `<div />`;
 
 exports[`Storyshots pages/rooms/maker Standard 1`] = `<div />`;
