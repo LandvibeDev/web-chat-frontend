@@ -1,5 +1,238 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots components/atoms/Text Medium Size 1`] = `
+<div
+  className="sc-AxjAm hTNkTF"
+  fontSize="1.3rem"
+>
+  MediumSize
+</div>
+`;
+
+exports[`Storyshots components/atoms/Text Small 1`] = `
+<div
+  className="sc-AxjAm kAJMGe"
+  fontSize="0.5rem"
+>
+  SmallSize
+</div>
+`;
+
+exports[`Storyshots components/atoms/Text Standard 1`] = `
+<div
+  className="sc-AxjAm etoykt"
+>
+  Standard
+</div>
+`;
+
+exports[`Storyshots components/molecules/Message Mine 1`] = `
+<div
+  className="sc-AxirZ hiMttf"
+>
+  <div
+    className="sc-AxiKw xeHPO"
+  >
+    <div
+      className="sc-AxjAm hTNkTF"
+      fontSize="1.3rem"
+    >
+      Mine Message
+    </div>
+    <div
+      className="sc-AxjAm kAJMGe"
+      fontSize="0.5rem"
+    >
+      오전 12:00:00
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots components/molecules/Message TEXT 1`] = `
+<div
+  className="sc-AxirZ hiMttf"
+>
+  <div
+    className="sc-AxiKw xeHPO"
+  >
+    <div
+      className="sc-AxjAm hTNkTF"
+      fontSize="1.3rem"
+    >
+      MINE TEXT Message
+    </div>
+    <div
+      className="sc-AxjAm kAJMGe"
+      fontSize="0.5rem"
+    >
+      오전 12:00:00
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots components/molecules/Message Theirs 1`] = `
+<div
+  className="sc-AxirZ dnufmQ"
+>
+  <div
+    className="sc-AxiKw xeHPO"
+  >
+    <div
+      className="sc-AxjAm hTNkTF"
+      fontSize="1.3rem"
+    >
+      Theirs Message
+    </div>
+    <div
+      className="sc-AxjAm kAJMGe"
+      fontSize="0.5rem"
+    >
+      오전 12:00:00
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots components/organisms/Conversation Standard 1`] = `
+<section
+  className="sc-AxhCb eUYGmC"
+>
+  <div
+    className="sc-AxirZ hiMttf"
+  >
+    <div
+      className="sc-AxiKw xeHPO"
+    >
+      <div
+        className="sc-AxjAm hTNkTF"
+        fontSize="1.3rem"
+      >
+        hello world
+      </div>
+      <div
+        className="sc-AxjAm kAJMGe"
+        fontSize="0.5rem"
+      >
+        2020-08-01 00:00:00
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-AxirZ dnufmQ"
+  >
+    <div
+      className="sc-AxiKw xeHPO"
+    >
+      <div
+        className="sc-AxjAm hTNkTF"
+        fontSize="1.3rem"
+      >
+        hi
+      </div>
+      <div
+        className="sc-AxjAm kAJMGe"
+        fontSize="0.5rem"
+      >
+        2020-08-01 01:00:00
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-AxirZ dnufmQ"
+  >
+    <div
+      className="sc-AxiKw xeHPO"
+    >
+      <div
+        className="sc-AxjAm hTNkTF"
+        fontSize="1.3rem"
+      >
+        good
+      </div>
+      <div
+        className="sc-AxjAm kAJMGe"
+        fontSize="0.5rem"
+      >
+        2020-08-02 00:00:00
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Storyshots pages/chat/room/template Standard 1`] = `
+<div
+  className="sc-AxhUy jzZuVA"
+>
+  <section
+    className="sc-AxhCb eUYGmC"
+  >
+    <div
+      className="sc-AxirZ hiMttf"
+    >
+      <div
+        className="sc-AxiKw xeHPO"
+      >
+        <div
+          className="sc-AxjAm hTNkTF"
+          fontSize="1.3rem"
+        >
+          hello world
+        </div>
+        <div
+          className="sc-AxjAm kAJMGe"
+          fontSize="0.5rem"
+        >
+          2020-08-01 00:00:00
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-AxirZ dnufmQ"
+    >
+      <div
+        className="sc-AxiKw xeHPO"
+      >
+        <div
+          className="sc-AxjAm hTNkTF"
+          fontSize="1.3rem"
+        >
+          hi
+        </div>
+        <div
+          className="sc-AxjAm kAJMGe"
+          fontSize="0.5rem"
+        >
+          2020-08-01 01:00:00
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-AxirZ dnufmQ"
+    >
+      <div
+        className="sc-AxiKw xeHPO"
+      >
+        <div
+          className="sc-AxjAm hTNkTF"
+          fontSize="1.3rem"
+        >
+          good
+        </div>
+        <div
+          className="sc-AxjAm kAJMGe"
+          fontSize="0.5rem"
+        >
+          2020-08-02 00:00:00
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
 exports[`Storyshots pages/rooms/board Standard 1`] = `<div />`;
 
 exports[`Storyshots pages/rooms/maker Standard 1`] = `<div />`;
