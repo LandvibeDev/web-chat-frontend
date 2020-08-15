@@ -13,9 +13,9 @@ function transformDate(message) {
 }
 
 async function getMessages(id) {
-    const response = await axios.get(`/api/rooms/${id}`);
+    const response = await axios.get(`/api/rooms/${id}/messages`);
     if (response.status === 200) {
-        const { messages } = response.data;
+        const messages = response.data;
         return messages.map(transformDate);
     }
 
