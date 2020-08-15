@@ -5,15 +5,18 @@ import styled, { css } from 'styled-components';
 const StyledText = styled.div`
   display: ${(props) => props.display || 'inline-block'};
   ${(props) => props.fontSize && css`font-size: ${props.fontSize}`};
-  ${(props) => props.backgroundColor && css`background-color: ${props.backgroundColor}`};
-  ${(props) => props.color && css`color: ${props.color}`};
-  ${(props) => props.margin && css`margin: ${props.margin}`};
   ${(props) => props.padding && css`padding: ${props.padding}`};
-  border-radius: 12px;
   text-align: center;
 `;
 
 function setUpSize(size, attributes) {
+    if (size === 'sm') {
+        return Object.assign(
+            attributes, {
+                fontSize: '0.5rem'
+            }
+        );
+    }
     // Medium
     if (size === 'md') {
         return Object.assign(
@@ -27,32 +30,31 @@ function setUpSize(size, attributes) {
     return attributes;
 }
 
-function setUpType(type, attributes) {
-    // Message
-    if (type === 'ms') {
-        return Object.assign(attributes, {
-            backgroundColor: '#ffe78f',
-            margin: '0.5rem 0 0 0',
-            padding: '0.5rem'
-        });
+function setUpBoxModel(boxModel, attributes) {
+    // Small
+    if (boxModel === 'sm') {
+        return Object.assign(
+            attributes, {
+                padding: '0.2em'
+            }
+        );
     }
 
     // Standard
     return attributes;
 }
 
-function setUp(type, size) {
-    return [setUpSize.bind(null, size), setUpType.bind(null, type)]
+function setUp(size, boxModel) {
+    return [setUpSize.bind(null, size), setUpBoxModel.bind(null, boxModel)]
         .reduce((attr, func) => func(attr), {});
 }
 
 function Text(props) {
     const {
-        text, type, size
+        text, size, boxModel
     } = props;
 
-    const attributes = useMemo(setUp.bind(null, type, size), [type, size]);
-
+    const attributes = useMemo(setUp.bind(null, size, boxModel), [size, boxModel]);
     return (
         <StyledText {...attributes}>
             {text}
@@ -62,13 +64,13 @@ function Text(props) {
 
 Text.propTypes = {
     text: PropTypes.string.isRequired,
-    type: PropTypes.string,
-    size: PropTypes.string
+    size: PropTypes.string,
+    boxModel: PropTypes.string
 };
 
 Text.defaultProps = {
-    type: 'std',
-    size: 'std'
+    size: 'std',
+    boxModel: 'std'
 };
 
 export default Text;

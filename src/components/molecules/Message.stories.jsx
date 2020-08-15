@@ -29,14 +29,14 @@ export default {
                 options: Object.values(MessageType)
             }
         },
-        contents: {
+        info: {
             type: { required: true },
-            description: '메시지 컨텐츠',
+            description: '메시지 데이터 정보',
             table: {
-                type: { summary: 'string' }
+                type: { summary: 'object' }
             },
             control: {
-                type: 'text'
+                type: 'object'
             }
         }
     }
@@ -46,12 +46,28 @@ export const Mine = (args) => <Message {...args} />;
 Mine.args = {
     who: MessageTarget.MINE,
     type: MessageType.TEXT,
-    contents: 'Mine Message'
+    info: {
+        contents: 'Mine Message',
+        createdAt: '오전 12:00:00'
+    }
 };
 
 export const Theirs = (args) => <Message {...args} />;
 Theirs.args = {
     who: MessageTarget.THEIRS,
     type: MessageType.TEXT,
-    contents: 'Theirs Message'
+    info: {
+        contents: 'Theirs Message',
+        createdAt: '오전 12:00:00'
+    }
+};
+
+export const TEXT = (args) => <Message {...args} />;
+TEXT.args = {
+    who: MessageTarget.MINE,
+    type: MessageType.TEXT,
+    info: {
+        contents: 'MINE TEXT Message',
+        createdAt: '오전 12:00:00'
+    }
 };

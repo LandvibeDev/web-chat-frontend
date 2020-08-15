@@ -14,20 +14,20 @@ export default {
                 type: 'text'
             }
         },
-        type: {
-            type: { required: false },
-            description: '타입',
-            control: {
-                type: 'select',
-                options: ['std', 'ms']
-            }
-        },
         size: {
             type: { required: false },
-            description: '크기',
+            description: '크기 설정 구분자',
             control: {
                 type: 'select',
-                options: ['std', 'md']
+                options: ['std', 'sm', 'md']
+            }
+        },
+        boxModel: {
+            type: { required: false },
+            description: 'Padding | Margin | Border 설정하는 구분자',
+            control: {
+                type: 'select',
+                options: ['std', 'sm']
             }
         }
     }
@@ -36,13 +36,20 @@ export default {
 export const Standard = (args) => <Text {...args} />;
 Standard.args = {
     text: 'Standard',
-    type: 'std',
-    size: 'std'
+    size: 'std',
+    boxModel: 'std'
 };
 
-export const MessageType = (args) => <Text {...args} />;
-MessageType.args = {
-    text: 'MessageType',
-    type: 'ms',
-    size: 'md'
+export const Small = (args) => <Text {...args} />;
+Small.args = {
+    text: 'SmallSize',
+    size: 'sm',
+    boxModel: 'sm'
+};
+
+export const MediumSize = (args) => <Text {...args} />;
+MediumSize.args = {
+    text: 'MediumSize',
+    size: 'md',
+    boxModel: 'sm'
 };

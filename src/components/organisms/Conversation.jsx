@@ -11,13 +11,18 @@ const StyledConversation = styled.section`
   background-color: #f9fcfb;
 `;
 
-function toMessages(user, chatList) {
-    return chatList.map((it) => (
-        <Message key={it.id}
-            who={chooseType(user, it.creator)}
-            type={it.type}
-            contents={it.contents} />
-    ));
+function toMessages(user, messages) {
+    return messages.map(({
+        id, contents, messageType, createdAt, createdBy
+    }) => {
+        const info = { contents, createdAt };
+        return (
+            <Message key={id}
+                who={chooseType(user, createdBy)}
+                type={messageType}
+                info={info} />
+        );
+    });
 }
 
 function Conversation({ user, messages }) {

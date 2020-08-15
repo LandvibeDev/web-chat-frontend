@@ -11,18 +11,34 @@ const StyledMessage = styled.div`
   text-align: ${(props) => (props.who === MessageTarget.MINE ? 'left' : 'right')};
 `;
 
-function chooseType(type, contents) {
+const TextMessage = styled.div`
+  display: inline-block;
+  background-color: #ffe78f;
+  margin: 0.5rem 0 0 0;
+  padding: 0.5rem;
+  border-radius: 10px;
+`;
+
+function chooseType(type, info) {
+    const { contents, createdAt } = info;
     if (isText(type)) {
-        return <Text text={contents} type="ms" size="md" />;
+        return (
+            <TextMessage>
+                <Text text={contents} size="md" boxModel="sm" />
+                <Text text={createdAt} size="sm" boxModel="sm" />
+            </TextMessage>
+        );
     }
 
     return <div />;
 }
 
-function Message({ who, type, contents }) {
+function Message({
+    who, type, info
+}) {
     return (
         <StyledMessage who={who}>
-            {chooseType(type, contents)}
+            {chooseType(type, info)}
         </StyledMessage>
     );
 }
@@ -30,7 +46,7 @@ function Message({ who, type, contents }) {
 Message.propTypes = {
     who: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
-    contents: PropTypes.string.isRequired
+    info: PropTypes.objectOf(PropTypes.string).isRequired
 };
 
 export default Message;

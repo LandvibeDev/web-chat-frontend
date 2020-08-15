@@ -28,7 +28,7 @@ function ChatRoom() {
         try {
             const data = await getMessages(id);
             dispatch({
-                messages: data.messages,
+                messages: data,
                 type: 'initialize'
             });
         } catch (error) {
