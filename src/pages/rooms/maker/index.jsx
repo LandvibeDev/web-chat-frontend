@@ -1,9 +1,9 @@
 import React from 'react';
 import RoomMakerTemplate from './templates';
 
-function RoomMaker() {
+function RoomMaker({history}) {
     return (
-        <RoomMakerTemplate />
+        <RoomMakerTemplate history={history}></RoomMakerTemplate>
     );
 }
 

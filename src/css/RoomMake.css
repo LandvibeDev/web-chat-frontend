@@ -1,8 +1,5 @@
 .RoomMakeHeader{
-    padding-left : 50px;
-    padding-right : 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding : 20px 50px 20px 50px;
     background-color: orange;
     border-radius: 10px;
 }
@@ -16,12 +13,9 @@
 }
 
 .radiusBox{
-    margin:auto;
+    margin: 1rem auto 3rem;
     text-align: center;/*  글자 가운데로 */
-    padding-left : 70px;
-    padding-right : 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding : 20px 70px 20px 70px;
     background-color: orange;
     border-radius: 10px;
     font-size:25px;
@@ -43,7 +37,7 @@
 }
 
 .RoomMakeTitle{
-    margin:auto;
+    margin:2rem auto 5rem;
 }
 
 .RoomMakeBtn{

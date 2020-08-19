@@ -1,26 +1,22 @@
 import React, {useState} from 'react';
-import '../../../../css/RoomMake.css';
-import userIcon from "../../../../../src/userIcon.PNG";
-import axios from 'axios';
+import 'css/RoomMake.css';
+import userIcon from "userIcon.PNG";
+import createRooms from "service/createRooms";
+import {useHistory} from 'react-router'
 
-function RoomMakerTemplate({history}) {
+function RoomMakerTemplate() {
     const [title, setTitle] = useState('');
+    let history = useHistory();
 
-    const onChange = (event) => {
+    const on = (func) => (event)=>{
         event.stopPropagation();
-        setTitle(event.target.value);
+        func(event);
     };
 
-    const createRoom = () => {
-        axios.post('/rooms', {
-            title: title
-        })
-            .then(res => console.log(res.data))
-            .catch(error => console.log(error))
-    };
+    const onChange=on((event)=> setTitle(event.target.value));
 
     const create = async () => {
-        const isSuccesses = await createRoom(title);
+        const isSuccesses = await createRooms(title);
         if (isSuccesses) {
             history.goBack();
         } else {
@@ -28,20 +24,11 @@ function RoomMakerTemplate({history}) {
         }
     };
 
-    const onEnterPress = (event) => {
-        event.stopPropagation();
-        if (event.key === 'Enter') {
-            create();
-        }
-    };
+    const onEnterPress = on((event) => event.key === 'Enter' && create());
 
-    const onCreateClick = (event) => {
-        event.stopPropagation();
-        create();
-    };
+    const onCreateClick = on(create);
 
     return (
-
         <div>
             <div className='RoomMakeHeader'>
                 <label className='fontSetting'>서비스명</label>
@@ -51,15 +38,11 @@ function RoomMakerTemplate({history}) {
             <div>
                 <div className='enrollment'>
                     <label className='radiusBox'>채팅방 개설</label>
-                    <br/>
-                    <br/> <br/>
                     <div className='RoomMakeTitle'>
                         <label className='fontSetting'>채팅방 명 : </label>
                         <input className='RoomMakeInput' id="title" onChange={onChange} onKeyPress={onEnterPress}
                                value={title} placeholder="입력해주세요."/>
                     </div>
-                    <br/>
-                    <br/>
                     <button className='RoomMakeBtn' onClick={onCreateClick}>생성</button>
                 </div>
             </div>
