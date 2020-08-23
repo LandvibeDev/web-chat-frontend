@@ -8,25 +8,33 @@ function RoomMakerTemplate() {
     const [title, setTitle] = useState('');
     let history = useHistory();
 
-    const on = (func) => (event)=>{
-        event.stopPropagation();
-        func(event);
-    };
+    function on(func) {
+        return function (event) {
+            event.stopPropagation();
+            func(event);
+        };
+    }
 
-    const onChange=on((event)=> setTitle(event.target.value));
+    const onChange = on((event) => setTitle(event.target.value));
 
     const create = async () => {
-        const isSuccesses = await createRooms(title);
-        if (isSuccesses) {
-            history.goBack();
-        } else {
+        if (title.length < 2 || title.length > 20) {
             alert('채팅방 생성이 실패하였습니다.');
+        } else {
+            const isSuccesses = await createRooms();
+            if (isSuccesses) {
+                alert('채팅방이 생성되었습니다.');
+                history.goBack();
+            } else {
+                alert('채팅방 생성이 실패하였습니다.');
+            }
         }
     };
 
     const onEnterPress = on((event) => event.key === 'Enter' && create());
 
     const onCreateClick = on(create);
+
 
     return (
         <div>

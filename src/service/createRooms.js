@@ -1,17 +1,23 @@
 import axios from 'axios';
 
-async function createRooms(title){
-    await axios.post('/api/rooms',{
-        title:title
-    })
-        .then(function(response){
-            console.log(response);
+function createRooms(title) {
+    let config = {
+        method: 'post',
+        url: 'api/rooms',
+        validateStatus: function (status) {
+            return status === 201
+        }
+    }
+    return axios(config).then(
+        function (response) {
             return true;
-        })
-        .catch(function(error){
-            console.log(error);
+        }
+    ).catch(
+        function (error) {
             return false;
-        });
+        }
+    )
 }
+
 
 export default createRooms;
