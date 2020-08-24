@@ -8,7 +8,7 @@ function getRooms(mock) {
 function createRooms(mock) {
     mock.onPost('/api/rooms')
         .reply(201, {
-            id: 23, text: 'good'
+            id: 4, text: 'room1'
         });
 }
 

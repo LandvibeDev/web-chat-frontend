@@ -2,7 +2,7 @@ import React from 'react';
 
 function RoomBoardTemplate() {
     return (
-        <div />
+        <div/>
     );
 }
 
