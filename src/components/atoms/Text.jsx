@@ -51,12 +51,12 @@ function setUp(size, boxModel) {
 
 function Text(props) {
     const {
-        text, size, boxModel
+        text, size, boxModel, onClick
     } = props;
 
     const attributes = useMemo(setUp.bind(null, size, boxModel), [size, boxModel]);
     return (
-        <StyledText {...attributes}>
+        <StyledText {...attributes} onClick={onClick}>
             {text}
         </StyledText>
     );
