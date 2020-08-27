@@ -1,8 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots components/atoms/Button Large 1`] = `
+<button
+  className="sc-AxjAm caLNYa"
+  color="white"
+  onClick={[Function]}
+  size="large"
+>
+  button
+</button>
+`;
+
+exports[`Storyshots components/atoms/Button Medium 1`] = `
+<button
+  className="sc-AxjAm iLeuSd"
+  color="white"
+  onClick={[Function]}
+  size="medium"
+>
+  button
+</button>
+`;
+
+exports[`Storyshots components/atoms/Button Orange 1`] = `
+<button
+  className="sc-AxjAm iYLzgW"
+  color="white"
+  onClick={[Function]}
+  size="medium"
+>
+  button
+</button>
+`;
+
+exports[`Storyshots components/atoms/Button Small 1`] = `
+<button
+  className="sc-AxjAm dCJwSW"
+  color="white"
+  onClick={[Function]}
+  size="small"
+>
+  button
+</button>
+`;
+
+exports[`Storyshots components/atoms/Button Standard 1`] = `
+<button
+  className="sc-AxjAm iLeuSd"
+  color="white"
+  onClick={[Function]}
+  size="medium"
+>
+  button
+</button>
+`;
+
+exports[`Storyshots components/atoms/Input Standard 1`] = `
+<input
+  className="sc-AxirZ bITCpe"
+  onChange={[Function]}
+  onKeyPress={[Function]}
+  value="Standard"
+/>
+`;
+
 exports[`Storyshots components/atoms/Text Medium Size 1`] = `
 <div
-  className="sc-AxjAm hTNkTF"
+  className="sc-AxiKw gtQIsi"
   fontSize="1.3rem"
 >
   MediumSize
@@ -11,7 +75,7 @@ exports[`Storyshots components/atoms/Text Medium Size 1`] = `
 
 exports[`Storyshots components/atoms/Text Small 1`] = `
 <div
-  className="sc-AxjAm kAJMGe"
+  className="sc-AxiKw bpIilB"
   fontSize="0.5rem"
 >
   SmallSize
@@ -20,7 +84,7 @@ exports[`Storyshots components/atoms/Text Small 1`] = `
 
 exports[`Storyshots components/atoms/Text Standard 1`] = `
 <div
-  className="sc-AxjAm etoykt"
+  className="sc-AxiKw jopmOO"
 >
   Standard
 </div>
@@ -28,19 +92,19 @@ exports[`Storyshots components/atoms/Text Standard 1`] = `
 
 exports[`Storyshots components/molecules/Message Mine 1`] = `
 <div
-  className="sc-AxirZ hiMttf"
+  className="sc-AxhCb jezmcA"
 >
   <div
-    className="sc-AxiKw xeHPO"
+    className="sc-AxhUy iteshX"
   >
     <div
-      className="sc-AxjAm hTNkTF"
+      className="sc-AxiKw gtQIsi"
       fontSize="1.3rem"
     >
       Mine Message
     </div>
     <div
-      className="sc-AxjAm kAJMGe"
+      className="sc-AxiKw bpIilB"
       fontSize="0.5rem"
     >
       오전 12:00:00
@@ -51,19 +115,19 @@ exports[`Storyshots components/molecules/Message Mine 1`] = `
 
 exports[`Storyshots components/molecules/Message TEXT 1`] = `
 <div
-  className="sc-AxirZ hiMttf"
+  className="sc-AxhCb jezmcA"
 >
   <div
-    className="sc-AxiKw xeHPO"
+    className="sc-AxhUy iteshX"
   >
     <div
-      className="sc-AxjAm hTNkTF"
+      className="sc-AxiKw gtQIsi"
       fontSize="1.3rem"
     >
       MINE TEXT Message
     </div>
     <div
-      className="sc-AxjAm kAJMGe"
+      className="sc-AxiKw bpIilB"
       fontSize="0.5rem"
     >
       오전 12:00:00
@@ -74,19 +138,19 @@ exports[`Storyshots components/molecules/Message TEXT 1`] = `
 
 exports[`Storyshots components/molecules/Message Theirs 1`] = `
 <div
-  className="sc-AxirZ dnufmQ"
+  className="sc-AxhCb eyuKQX"
 >
   <div
-    className="sc-AxiKw xeHPO"
+    className="sc-AxhUy iteshX"
   >
     <div
-      className="sc-AxjAm hTNkTF"
+      className="sc-AxiKw gtQIsi"
       fontSize="1.3rem"
     >
       Theirs Message
     </div>
     <div
-      className="sc-AxjAm kAJMGe"
+      className="sc-AxiKw bpIilB"
       fontSize="0.5rem"
     >
       오전 12:00:00
@@ -95,24 +159,68 @@ exports[`Storyshots components/molecules/Message Theirs 1`] = `
 </div>
 `;
 
+exports[`Storyshots components/molecules/MessageSender Column 1`] = `
+<div
+  className="sc-AxgMl ktqcQs"
+  direction="column"
+>
+  <input
+    className="sc-AxirZ eeHZew"
+    onChange={[Function]}
+    onKeyPress={[Function]}
+    value=""
+  />
+  <button
+    className="sc-AxjAm hERJJ"
+    color="white"
+    onClick={[Function]}
+    size="medium"
+  >
+    보내기
+  </button>
+</div>
+`;
+
+exports[`Storyshots components/molecules/MessageSender Default 1`] = `
+<div
+  className="sc-AxgMl kfsjxk"
+  direction="row"
+>
+  <input
+    className="sc-AxirZ eeHZew"
+    onChange={[Function]}
+    onKeyPress={[Function]}
+    value=""
+  />
+  <button
+    className="sc-AxjAm hERJJ"
+    color="white"
+    onClick={[Function]}
+    size="medium"
+  >
+    보내기
+  </button>
+</div>
+`;
+
 exports[`Storyshots components/organisms/Conversation Standard 1`] = `
 <section
-  className="sc-AxhCb eUYGmC"
+  className="sc-AxheI cmsdvn"
 >
   <div
-    className="sc-AxirZ hiMttf"
+    className="sc-AxhCb jezmcA"
   >
     <div
-      className="sc-AxiKw xeHPO"
+      className="sc-AxhUy iteshX"
     >
       <div
-        className="sc-AxjAm hTNkTF"
+        className="sc-AxiKw gtQIsi"
         fontSize="1.3rem"
       >
         hello world
       </div>
       <div
-        className="sc-AxjAm kAJMGe"
+        className="sc-AxiKw bpIilB"
         fontSize="0.5rem"
       >
         2020-08-01 00:00:00
@@ -120,19 +228,19 @@ exports[`Storyshots components/organisms/Conversation Standard 1`] = `
     </div>
   </div>
   <div
-    className="sc-AxirZ dnufmQ"
+    className="sc-AxhCb eyuKQX"
   >
     <div
-      className="sc-AxiKw xeHPO"
+      className="sc-AxhUy iteshX"
     >
       <div
-        className="sc-AxjAm hTNkTF"
+        className="sc-AxiKw gtQIsi"
         fontSize="1.3rem"
       >
         hi
       </div>
       <div
-        className="sc-AxjAm kAJMGe"
+        className="sc-AxiKw bpIilB"
         fontSize="0.5rem"
       >
         2020-08-01 01:00:00
@@ -140,19 +248,19 @@ exports[`Storyshots components/organisms/Conversation Standard 1`] = `
     </div>
   </div>
   <div
-    className="sc-AxirZ dnufmQ"
+    className="sc-AxhCb eyuKQX"
   >
     <div
-      className="sc-AxiKw xeHPO"
+      className="sc-AxhUy iteshX"
     >
       <div
-        className="sc-AxjAm hTNkTF"
+        className="sc-AxiKw gtQIsi"
         fontSize="1.3rem"
       >
         good
       </div>
       <div
-        className="sc-AxjAm kAJMGe"
+        className="sc-AxiKw bpIilB"
         fontSize="0.5rem"
       >
         2020-08-02 00:00:00
@@ -162,27 +270,53 @@ exports[`Storyshots components/organisms/Conversation Standard 1`] = `
 </section>
 `;
 
+exports[`Storyshots components/organisms/MessageEditor Standard 1`] = `
+<div
+  className="sc-Axmtr WAiiP"
+>
+  <div
+    className="sc-AxgMl kfsjxk"
+    direction="row"
+  >
+    <input
+      className="sc-AxirZ eeHZew"
+      onChange={[Function]}
+      onKeyPress={[Function]}
+      value=""
+    />
+    <button
+      className="sc-AxjAm hERJJ"
+      color="white"
+      onClick={[Function]}
+      size="medium"
+    >
+      보내기
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots pages/chat/room/template Standard 1`] = `
 <div
-  className="sc-AxhUy jzZuVA"
+  className="sc-AxmLO jkdtJG"
 >
   <section
-    className="sc-AxhCb eUYGmC"
+    className="sc-AxheI cmsdvn"
   >
     <div
-      className="sc-AxirZ hiMttf"
+      className="sc-AxhCb jezmcA"
     >
       <div
-        className="sc-AxiKw xeHPO"
+        className="sc-AxhUy iteshX"
       >
         <div
-          className="sc-AxjAm hTNkTF"
+          className="sc-AxiKw gtQIsi"
           fontSize="1.3rem"
         >
           hello world
         </div>
         <div
-          className="sc-AxjAm kAJMGe"
+          className="sc-AxiKw bpIilB"
           fontSize="0.5rem"
         >
           2020-08-01 00:00:00
@@ -190,19 +324,19 @@ exports[`Storyshots pages/chat/room/template Standard 1`] = `
       </div>
     </div>
     <div
-      className="sc-AxirZ dnufmQ"
+      className="sc-AxhCb eyuKQX"
     >
       <div
-        className="sc-AxiKw xeHPO"
+        className="sc-AxhUy iteshX"
       >
         <div
-          className="sc-AxjAm hTNkTF"
+          className="sc-AxiKw gtQIsi"
           fontSize="1.3rem"
         >
           hi
         </div>
         <div
-          className="sc-AxjAm kAJMGe"
+          className="sc-AxiKw bpIilB"
           fontSize="0.5rem"
         >
           2020-08-01 01:00:00
@@ -210,19 +344,19 @@ exports[`Storyshots pages/chat/room/template Standard 1`] = `
       </div>
     </div>
     <div
-      className="sc-AxirZ dnufmQ"
+      className="sc-AxhCb eyuKQX"
     >
       <div
-        className="sc-AxiKw xeHPO"
+        className="sc-AxhUy iteshX"
       >
         <div
-          className="sc-AxjAm hTNkTF"
+          className="sc-AxiKw gtQIsi"
           fontSize="1.3rem"
         >
           good
         </div>
         <div
-          className="sc-AxjAm kAJMGe"
+          className="sc-AxiKw bpIilB"
           fontSize="0.5rem"
         >
           2020-08-02 00:00:00
@@ -230,9 +364,83 @@ exports[`Storyshots pages/chat/room/template Standard 1`] = `
       </div>
     </div>
   </section>
+  <div
+    className="sc-Axmtr WAiiP"
+  >
+    <div
+      className="sc-AxgMl kfsjxk"
+      direction="row"
+    >
+      <input
+        className="sc-AxirZ eeHZew"
+        onChange={[Function]}
+        onKeyPress={[Function]}
+        value=""
+      />
+      <button
+        className="sc-AxjAm hERJJ"
+        color="white"
+        onClick={[Function]}
+        size="medium"
+      >
+        보내기
+      </button>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Storyshots pages/rooms/board Standard 1`] = `<div />`;
 
-exports[`Storyshots pages/rooms/maker Standard 1`] = `<div />`;
+exports[`Storyshots pages/rooms/maker Standard 1`] = `
+<div>
+  <div
+    className="RoomMakeHeader"
+  >
+    <label
+      className="fontSetting"
+    >
+      서비스명
+    </label>
+    <img
+      alt=""
+      className="userIcon"
+      src="userIcon.PNG"
+    />
+  </div>
+  <div>
+    <div
+      className="enrollment"
+    >
+      <label
+        className="radiusBox"
+      >
+        채팅방 개설
+      </label>
+      <div
+        className="RoomMakeTitle"
+      >
+        <label
+          className="fontSetting"
+        >
+          채팅방 명 : 
+        </label>
+        <input
+          className="RoomMakeInput"
+          id="title"
+          onChange={[Function]}
+          onKeyPress={[Function]}
+          placeholder="입력해주세요."
+          value=""
+        />
+      </div>
+      <button
+        className="RoomMakeBtn"
+        onClick={[Function]}
+      >
+        생성
+      </button>
+    </div>
+  </div>
+</div>
+`;
