@@ -7,6 +7,8 @@ const StyledInput = styled.input`
     ${(props) => !!props.groupRatio
     && css`
           flex: ${props.groupRatio};
+          flex-basis: auto;
+          margin: 0.1em;
       `};
 `;
 

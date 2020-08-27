@@ -26,7 +26,9 @@ const flexStyles = css`
     ${(props) => !!props.groupRatio
     && css`
           flex: ${props.groupRatio};
-      `};
+          flex-basis: auto;
+          margin: 0.1em;
+     `}
 `;
 
 const colorStyles = css`
@@ -57,16 +59,15 @@ function setUpColorInfo(color) {
             backgroundColor: 'orange',
             color: 'white'
         };
-    } if (color === 'standard') {
+    }
+    if (color === 'standard') {
         return {
             backgroundColor: '#ff847c',
             color: 'white'
         };
     }
 
-    return {
-
-    };
+    return {};
 }
 
 function Button({
