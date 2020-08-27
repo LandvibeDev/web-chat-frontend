@@ -23,7 +23,10 @@ const sizeStyles = css`
 `;
 
 const flexStyles = css`
-    ${(props) => !!props.groupRatio && css`flex: ${props.groupRatio}`};
+    ${(props) => !!props.groupRatio
+    && css`
+          flex: ${props.groupRatio};
+      `};
 `;
 
 const colorStyles = css`

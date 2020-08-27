@@ -6,8 +6,21 @@ import Button from 'components/atoms/Button';
 
 const StyledMessageSender = styled.div`
   display: flex;
+  flex-wrap: wrap;
   flex-direction: ${(props) => props.direction};
 `;
+
+function decideRatioByDirection(direction) {
+    if (direction === 'row') {
+        return {
+            input: 5, button: 1
+        };
+    }
+
+    return {
+        input: 1, button: 1
+    };
+}
 
 function MessageSender(props) {
     const { onSend, direction } = props;
@@ -29,13 +42,15 @@ function MessageSender(props) {
 
     const onChange = on((event) => setInputMessage({ value: event.target.value }));
 
+    const { input, button } = decideRatioByDirection(direction);
+
     return (
         <StyledMessageSender direction={direction}>
             <Input value={inputMessage.value}
-                groupRatio={5}
+                groupRatio={input}
                 onChange={onChange}
                 onKeyPress={onKeyPress} />
-            <Button groupRatio={1}
+            <Button groupRatio={button}
                 text="보내기"
                 size="medium"
                 onClick={onClick} />

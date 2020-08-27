@@ -4,7 +4,10 @@ import PropTypes from 'prop-types';
 
 const StyledInput = styled.input`
     padding: 0.3em 1em;
-    ${(props) => !!props.groupRatio && css`flex: ${props.groupRatio}`};
+    ${(props) => !!props.groupRatio
+    && css`
+          flex: ${props.groupRatio};
+      `};
 `;
 
 function Input(props) {
