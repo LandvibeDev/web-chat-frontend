@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import Text from "../atoms/Text";
+import { useHistory } from 'react-router-dom';
 
 const StyledCard = styled.div`
   display: inline-block;
@@ -13,10 +14,11 @@ const StyledCard = styled.div`
 `;
 
 function Card({room}) {
+    const history=useHistory();
     return (
         <StyledCard>
             <Text text={room.title} size="md" boxModel="sm"
-                  onClick={()=>window.open('http://localhost:3000/rooms/'+room.id)}/>
+                  onClick={()=>history.push('/rooms/'+room.id)}/>
         </StyledCard>
     );
 }

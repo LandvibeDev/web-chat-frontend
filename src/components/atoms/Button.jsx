@@ -36,21 +36,19 @@ const StyledButton = styled.button`
     padding-right: 10rem;
     margin: 0 0 0 33rem;
 
-    background: ${(props) => props.color};
+    background: ${(props) => props.color || 'orange'};
 
     ${sizeStyles}
 `;
 
-function Button({ background, size, onClick, ...rest }) {
+function Button({ size, onClick, ...rest }) {
     return (
-        <StyledButton background={background} size={size}
-                      onClick={onClick} {...rest}>
+        <StyledButton size={size} onClick={onClick} {...rest}>
         </StyledButton>
     );
 }
 
 Button.defaultProps = {
-    color: 'orange',
     size: 'large'
 };
 

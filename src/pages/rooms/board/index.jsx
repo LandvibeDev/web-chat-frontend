@@ -7,8 +7,8 @@ function RoomBoard() {
 
     useEffect(() => {
         (async () => {
-            const rooms = await getRooms();
-            updateRooms(rooms.rooms);
+            const roomList = await getRooms();
+            updateRooms(roomList.rooms);
         })();
     }, []);
     return (

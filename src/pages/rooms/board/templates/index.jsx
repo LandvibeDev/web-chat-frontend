@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
-import CardList from "../../../../components/organisms/CardList";
-import Button from "../../../../components/atoms/Button";
+import CardList from "components/organisms/CardList";
+import Button from "components/atoms/Button";
+import { useHistory } from 'react-router-dom';
 
 const Container = styled.div`
   width: 100%;
@@ -9,10 +10,11 @@ const Container = styled.div`
 `;
 
 function RoomBoardTemplate({rooms}) {
+    const history=useHistory();
     return (
         <Container>
             <CardList rooms={rooms} />
-            <Button onClick={()=>window.open('http://localhost:3000/rooms')}>채팅방 생성</Button>
+            <Button onClick={()=>history.push('/rooms')}>채팅방 생성</Button>
         </Container>
     )
 }
