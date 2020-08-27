@@ -1,4 +1,5 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 import MessageEditor from './MessageEditor';
 
 export default {
@@ -8,5 +9,5 @@ export default {
 
 export const Standard = (args) => <MessageEditor {...args} />;
 Standard.args = {
-    onSend: () => {}
+    onSend: action('onChange')
 };

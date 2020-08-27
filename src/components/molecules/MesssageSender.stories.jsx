@@ -1,4 +1,5 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 import MessageSender from './MessageSender';
 
 export default {
@@ -24,11 +25,11 @@ export default {
 
 export const Default = (args) => <MessageSender {...args} />;
 Default.args = {
-    onSend: () => {}
+    onSend: action('onSend')
 };
 
 export const Column = (args) => <MessageSender {...args} />;
 Column.args = {
-    onSend: () => {},
+    onSend: action('onSend'),
     direction: 'column'
 };

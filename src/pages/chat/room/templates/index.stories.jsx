@@ -1,4 +1,5 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 import ChatRoomTemplate from './index';
 
 export default {
@@ -35,5 +36,5 @@ Standard.args = {
     }, {
         id: 3, contents: 'good', messageType: 'TEXT', createdAt: '2020-08-02 00:00:00', createdBy: 2
     }],
-    onSend: () => {}
+    onSend: action('onSend')
 };
