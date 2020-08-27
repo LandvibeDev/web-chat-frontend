@@ -57,7 +57,7 @@ exports[`Storyshots components/atoms/Button Standard 1`] = `
 
 exports[`Storyshots components/atoms/Input Standard 1`] = `
 <input
-  className="sc-AxirZ bITCpe"
+  className="sc-AxirZ cSFmzz"
   onChange={[Function]}
   onKeyPress={[Function]}
   value="Standard"
@@ -161,17 +161,17 @@ exports[`Storyshots components/molecules/Message Theirs 1`] = `
 
 exports[`Storyshots components/molecules/MessageSender Column 1`] = `
 <div
-  className="sc-AxgMl ktqcQs"
+  className="sc-AxgMl khtuHx"
   direction="column"
 >
   <input
-    className="sc-AxirZ eeHZew"
+    className="sc-AxirZ ipBNtJ"
     onChange={[Function]}
     onKeyPress={[Function]}
     value=""
   />
   <button
-    className="sc-AxjAm hERJJ"
+    className="sc-AxjAm xoHIA"
     color="white"
     onClick={[Function]}
     size="medium"
@@ -183,17 +183,17 @@ exports[`Storyshots components/molecules/MessageSender Column 1`] = `
 
 exports[`Storyshots components/molecules/MessageSender Default 1`] = `
 <div
-  className="sc-AxgMl kfsjxk"
+  className="sc-AxgMl ieaSax"
   direction="row"
 >
   <input
-    className="sc-AxirZ eeHZew"
+    className="sc-AxirZ hPUeId"
     onChange={[Function]}
     onKeyPress={[Function]}
     value=""
   />
   <button
-    className="sc-AxjAm hERJJ"
+    className="sc-AxjAm xoHIA"
     color="white"
     onClick={[Function]}
     size="medium"
@@ -275,17 +275,17 @@ exports[`Storyshots components/organisms/MessageEditor Standard 1`] = `
   className="sc-Axmtr WAiiP"
 >
   <div
-    className="sc-AxgMl kfsjxk"
+    className="sc-AxgMl ieaSax"
     direction="row"
   >
     <input
-      className="sc-AxirZ eeHZew"
+      className="sc-AxirZ hPUeId"
       onChange={[Function]}
       onKeyPress={[Function]}
       value=""
     />
     <button
-      className="sc-AxjAm hERJJ"
+      className="sc-AxjAm xoHIA"
       color="white"
       onClick={[Function]}
       size="medium"
@@ -368,17 +368,17 @@ exports[`Storyshots pages/chat/room/template Standard 1`] = `
     className="sc-Axmtr WAiiP"
   >
     <div
-      className="sc-AxgMl kfsjxk"
+      className="sc-AxgMl ieaSax"
       direction="row"
     >
       <input
-        className="sc-AxirZ eeHZew"
+        className="sc-AxirZ hPUeId"
         onChange={[Function]}
         onKeyPress={[Function]}
         value=""
       />
       <button
-        className="sc-AxjAm hERJJ"
+        className="sc-AxjAm xoHIA"
         color="white"
         onClick={[Function]}
         size="medium"
