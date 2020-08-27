@@ -9,8 +9,7 @@ export default {
             description: '메시지 보내기 핸들러',
             table: {
                 type: { summary: ['function'] }
-            },
-            action: 'clicked'
+            }
         },
         direction: {
             type: { required: false },
@@ -25,11 +24,11 @@ export default {
 
 export const Default = (args) => <MessageSender {...args} />;
 Default.args = {
-    send: () => {}
+    onSend: () => {}
 };
 
 export const Column = (args) => <MessageSender {...args} />;
 Column.args = {
-    send: () => {},
+    onSend: () => {},
     direction: 'column'
 };

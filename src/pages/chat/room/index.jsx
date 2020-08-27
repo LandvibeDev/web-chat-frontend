@@ -45,7 +45,7 @@ function ChatRoom() {
         fetch();
     }, [fetch]);
 
-    const send = async (message) => {
+    const onSend = async (message) => {
         const responseMessage = await createMessages(id, message);
         if (responseMessage) {
             dispatch({ type: 'add', message: responseMessage });
@@ -55,7 +55,7 @@ function ChatRoom() {
     return (
         <ChatRoomTemplate user={user}
             messages={messages}
-            send={send} />
+            onSend={onSend} />
     );
 }
 

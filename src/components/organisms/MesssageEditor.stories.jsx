@@ -8,5 +8,5 @@ export default {
 
 export const Standard = (args) => <MessageEditor {...args} />;
 Standard.args = {
-    send: () => {}
+    onSend: () => {}
 };

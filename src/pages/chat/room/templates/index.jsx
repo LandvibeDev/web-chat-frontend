@@ -10,12 +10,12 @@ const Container = styled.div`
 `;
 
 function ChatRoomTemplate({
-    user, messages, send
+    user, messages, onSend
 }) {
     return (
         <Container>
             <Conversation user={user} messages={messages} />
-            <MessageEditor send={send} />
+            <MessageEditor onSend={onSend} />
         </Container>
     );
 }
@@ -23,7 +23,7 @@ function ChatRoomTemplate({
 ChatRoomTemplate.propTypes = {
     user: PropsType.number.isRequired,
     messages: PropsType.arrayOf(PropsType.any).isRequired,
-    send: PropsType.func.isRequired
+    onSend: PropsType.func.isRequired
 };
 
 export default ChatRoomTemplate;

@@ -10,7 +10,7 @@ const StyledMessageSender = styled.div`
 `;
 
 function MessageSender(props) {
-    const { send, direction } = props;
+    const { onSend, direction } = props;
     const [inputMessage, setInputMessage] = useState({ value: '' });
 
     const on = (func) => (event) => {
@@ -19,7 +19,7 @@ function MessageSender(props) {
     };
 
     const sendInputMessage = () => {
-        send(inputMessage.value);
+        onSend(inputMessage.value);
         setInputMessage({ value: '' });
     };
 
@@ -44,7 +44,7 @@ function MessageSender(props) {
 }
 
 MessageSender.propTypes = {
-    send: PropTypes.func.isRequired,
+    onSend: PropTypes.func.isRequired,
     direction: PropTypes.string
 };
 
