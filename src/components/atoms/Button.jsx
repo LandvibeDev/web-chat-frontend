@@ -9,6 +9,7 @@ const sizeStyles = css`
         font-size: 0.875rem;
      `}
      
+
     ${(props) => props.size === 'medium'
     && css`
         height: 2.25rem;
