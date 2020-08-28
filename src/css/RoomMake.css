@@ -1,0 +1,50 @@
+.RoomMakeHeader{
+    padding : 20px 50px 20px 50px;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.enrollment {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top:35%;
+    left:35%;
+}
+
+.radiusBox{
+    margin: 1rem auto 3rem;
+    text-align: center;/*  글자 가운데로 */
+    padding : 20px 70px 20px 70px;
+    background-color: orange;
+    border-radius: 10px;
+    font-size:25px;
+}
+
+.userIcon{
+    float : right;
+    width:40px;
+    height:40px;
+}
+
+.fontSetting{
+    font-size:25px;
+}
+
+.RoomMakeInput{
+    width:350px;
+    height:35px;
+}
+
+.RoomMakeTitle{
+    margin:2rem auto 5rem;
+}
+
+.RoomMakeBtn{
+    margin:auto;
+    width:200px;
+    height:40px;
+    font-size:25px;
+    background-color: orange;
+    border-radius: 10px;
+}

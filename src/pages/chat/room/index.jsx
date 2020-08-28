@@ -3,6 +3,7 @@ import React, {
 } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import getMessages from 'service/getMessages';
+import createMessages from 'service/createMessages';
 import ChatRoomTemplate from './templates';
 
 function reducer(messages, actions) {
@@ -10,6 +11,8 @@ function reducer(messages, actions) {
     switch (type) {
     case 'initialize':
         return actions.messages;
+    case 'add':
+        return messages.concat(actions.message);
     default:
         return [];
     }
@@ -42,8 +45,17 @@ function ChatRoom() {
         fetch();
     }, [fetch]);
 
+    const onSend = async (message) => {
+        const responseMessage = await createMessages(id, message);
+        if (responseMessage) {
+            dispatch({ type: 'add', message: responseMessage });
+        }
+    };
+
     return (
-        <ChatRoomTemplate user={user} messages={messages} />
+        <ChatRoomTemplate user={user}
+            messages={messages}
+            onSend={onSend} />
     );
 }
 

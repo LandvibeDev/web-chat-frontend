@@ -3,7 +3,7 @@ import RoomMakerTemplate from './templates';
 
 function RoomMaker() {
     return (
-        <RoomMakerTemplate />
+        <RoomMakerTemplate/>
     );
 }
 
