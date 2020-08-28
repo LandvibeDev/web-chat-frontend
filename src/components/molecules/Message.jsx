@@ -8,7 +8,7 @@ import Text from 'components/atoms/Text';
 const StyledMessage = styled.div`
   width: 100%;
   display: inline-block;
-  text-align: ${(props) => (props.who === MessageTarget.MINE ? 'left' : 'right')};
+  text-align: ${(props) => (props.who === MessageTarget.MINE ? 'right' : 'left')};
 `;
 
 const TextMessage = styled.div`
