@@ -52,6 +52,7 @@ const StyledButton = styled.button`
     ${sizeStyles}
     ${flexStyles}
     ${colorStyles}
+    ${(props) => css(props.styles)}
 `;
 
 function setUpColorInfo(color) {
@@ -72,13 +73,14 @@ function setUpColorInfo(color) {
 }
 
 function Button({
-    text, size, color, groupRatio, onClick
+    text, size, color, groupRatio, onClick, styles
 }) {
     const colorInfo = setUpColorInfo(color);
     return (
         <StyledButton size={size}
             groupRatio={groupRatio}
             onClick={onClick}
+            styles={styles}
             {...colorInfo}>
             {text}
         </StyledButton>
@@ -90,7 +92,8 @@ Button.propTypes = {
     size: PropTypes.string,
     color: PropTypes.string,
     groupRatio: PropTypes.number,
-    onClick: PropTypes.func
+    onClick: PropTypes.func,
+    styles: PropTypes.objectOf(PropTypes.any)
 };
 
 Button.defaultProps = {
@@ -98,7 +101,8 @@ Button.defaultProps = {
     size: 'large',
     groupRatio: 0,
     onClick: () => {
-    }
+    },
+    styles: {}
 };
 
 export default Button;

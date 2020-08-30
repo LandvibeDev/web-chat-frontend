@@ -37,6 +37,13 @@ export default {
                 type: 'select',
                 options: ['standard', 'orange']
             }
+        },
+        styles: {
+            type: { required: false },
+            description: '커스텀 CSS 스타일 지정',
+            control: {
+                type: 'object'
+            }
         }
     }
 };
@@ -75,5 +82,12 @@ Orange.args = {
     text: 'button',
     size: 'medium',
     color: 'orange',
+    onClick: action('onClick')
+};
+
+export const CustomStyle = (args) => <Button {...args} />;
+CustomStyle.args = {
+    text: 'button',
+    styles: { width: '100%' },
     onClick: action('onClick')
 };
