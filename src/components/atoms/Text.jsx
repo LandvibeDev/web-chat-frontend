@@ -39,6 +39,15 @@ function setUpBoxModel(boxModel, attributes) {
             }
         );
     }
+    // Medium
+    if (boxModel === 'md') {
+        return Object.assign(
+            attributes, {
+                margin: '1em',
+                padding: '1em'
+            }
+        );
+    }
 
     // Standard
     return attributes;
@@ -65,12 +74,14 @@ function Text(props) {
 Text.propTypes = {
     text: PropTypes.string.isRequired,
     size: PropTypes.string,
-    boxModel: PropTypes.string
+    boxModel: PropTypes.string,
+    onClick: PropTypes.func
 };
 
 Text.defaultProps = {
     size: 'std',
-    boxModel: 'std'
+    boxModel: 'std',
+    onClick: () => { }
 };
 
 export default Text;

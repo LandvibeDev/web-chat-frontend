@@ -29,7 +29,7 @@ const flexStyles = css`
           flex: ${props.groupRatio};
           flex-basis: auto;
           margin: 0.1em;
-     `}
+      `}
 `;
 
 const colorStyles = css`
@@ -59,6 +59,18 @@ function setUpColorInfo(color) {
     if (color === 'orange') {
         return {
             backgroundColor: 'orange',
+            color: 'white'
+        };
+    }
+    if (color === 'green') {
+        return {
+            backgroundColor: '#81b214',
+            color: 'white'
+        };
+    }
+    if (color === 'blue') {
+        return {
+            backgroundColor: '#00bcd4',
             color: 'white'
         };
     }
