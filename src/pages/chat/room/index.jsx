@@ -46,10 +46,8 @@ function ChatRoom() {
     }, [fetch]);
 
     const onSend = async (message) => {
-        const responseMessage = await createMessages(id, message);
-        if (responseMessage) {
-            dispatch({ type: 'add', message: responseMessage });
-        }
+        await createMessages(id, message);
+        fetch();
     };
 
     return (

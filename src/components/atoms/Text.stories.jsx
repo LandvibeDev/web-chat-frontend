@@ -1,4 +1,5 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 import Text from './Text';
 
 export default {
@@ -52,4 +53,12 @@ MediumSize.args = {
     text: 'MediumSize',
     size: 'md',
     boxModel: 'sm'
+};
+
+export const ClickAbleText = (args) => <Text {...args} />;
+ClickAbleText.args = {
+    text: 'ClickAbleText',
+    size: 'md',
+    boxModel: 'sm',
+    onClick: action('onClick')
 };
