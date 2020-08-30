@@ -1,23 +1,19 @@
 import axios from 'axios';
 
 function createRooms(title) {
-    let config = {
+    const config = {
         method: 'post',
-        url: 'api/rooms',
-        validateStatus: function (status) {
-            return status === 201
+        url: '/api/rooms',
+        data: { title },
+        validateStatus(status) {
+            return status === 201;
         }
-    }
+    };
     return axios(config).then(
-        function (response) {
-            return true;
-        }
+        (response) => true
     ).catch(
-        function (error) {
-            return false;
-        }
-    )
+        (error) => false
+    );
 }
-
 
 export default createRooms;

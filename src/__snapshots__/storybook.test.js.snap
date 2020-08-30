@@ -1,8 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots components/atoms/Button Custom Style 1`] = `
+<button
+  className="sc-AxjAm eAuYVN"
+  color="white"
+  onClick={[Function]}
+  size="large"
+>
+  button
+</button>
+`;
+
 exports[`Storyshots components/atoms/Button Large 1`] = `
 <button
-  className="sc-AxjAm caLNYa"
+  className="sc-AxjAm bTSPsi"
   color="white"
   onClick={[Function]}
   size="large"
@@ -13,7 +24,7 @@ exports[`Storyshots components/atoms/Button Large 1`] = `
 
 exports[`Storyshots components/atoms/Button Medium 1`] = `
 <button
-  className="sc-AxjAm iLeuSd"
+  className="sc-AxjAm jYDBct"
   color="white"
   onClick={[Function]}
   size="medium"
@@ -24,7 +35,7 @@ exports[`Storyshots components/atoms/Button Medium 1`] = `
 
 exports[`Storyshots components/atoms/Button Orange 1`] = `
 <button
-  className="sc-AxjAm iYLzgW"
+  className="sc-AxjAm kSCyOa"
   color="white"
   onClick={[Function]}
   size="medium"
@@ -35,7 +46,7 @@ exports[`Storyshots components/atoms/Button Orange 1`] = `
 
 exports[`Storyshots components/atoms/Button Small 1`] = `
 <button
-  className="sc-AxjAm dCJwSW"
+  className="sc-AxjAm jjKKnu"
   color="white"
   onClick={[Function]}
   size="small"
@@ -46,7 +57,7 @@ exports[`Storyshots components/atoms/Button Small 1`] = `
 
 exports[`Storyshots components/atoms/Button Standard 1`] = `
 <button
-  className="sc-AxjAm iLeuSd"
+  className="sc-AxjAm jYDBct"
   color="white"
   onClick={[Function]}
   size="medium"
@@ -171,7 +182,7 @@ exports[`Storyshots components/molecules/MessageSender Column 1`] = `
     value=""
   />
   <button
-    className="sc-AxjAm xoHIA"
+    className="sc-AxjAm fCASDM"
     color="white"
     onClick={[Function]}
     size="medium"
@@ -193,7 +204,7 @@ exports[`Storyshots components/molecules/MessageSender Default 1`] = `
     value=""
   />
   <button
-    className="sc-AxjAm xoHIA"
+    className="sc-AxjAm fCASDM"
     color="white"
     onClick={[Function]}
     size="medium"
@@ -285,7 +296,7 @@ exports[`Storyshots components/organisms/MessageEditor Standard 1`] = `
       value=""
     />
     <button
-      className="sc-AxjAm xoHIA"
+      className="sc-AxjAm fCASDM"
       color="white"
       onClick={[Function]}
       size="medium"
@@ -378,7 +389,7 @@ exports[`Storyshots pages/chat/room/template Standard 1`] = `
         value=""
       />
       <button
-        className="sc-AxjAm xoHIA"
+        className="sc-AxjAm fCASDM"
         color="white"
         onClick={[Function]}
         size="medium"
@@ -390,7 +401,46 @@ exports[`Storyshots pages/chat/room/template Standard 1`] = `
 </div>
 `;
 
-exports[`Storyshots pages/rooms/board Standard 1`] = `<div />`;
+exports[`Storyshots pages/rooms/board Standard 1`] = `
+<div
+  className="sc-fzpans jdxXew"
+>
+  <section
+    className="sc-fzoLsD cKxoEx"
+  >
+    <div
+      className="sc-fzozJi lgNXDk"
+    >
+      <div
+        className="sc-AxiKw gtQIsi"
+        fontSize="1.3rem"
+        onClick={[Function]}
+      >
+        hello world
+      </div>
+    </div>
+    <div
+      className="sc-fzozJi lgNXDk"
+    >
+      <div
+        className="sc-AxiKw gtQIsi"
+        fontSize="1.3rem"
+        onClick={[Function]}
+      >
+        hi
+      </div>
+    </div>
+  </section>
+  <button
+    className="sc-AxjAm HtRID"
+    color="white"
+    onClick={[Function]}
+    size="large"
+  >
+    채팅방 생성
+  </button>
+</div>
+`;
 
 exports[`Storyshots pages/rooms/maker Standard 1`] = `
 <div>

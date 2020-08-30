@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from "styled-components";
-import Card from "../molecules/Card";
+import styled from 'styled-components';
+import Card from '../molecules/Card';
 
 const StyledCardList = styled.section`
   margin: 3em;
@@ -9,13 +9,11 @@ const StyledCardList = styled.section`
   background-color: white;
 `;
 
-function CardList({rooms}) {
+function CardList({ rooms }) {
     return (
         <StyledCardList>
             {
-                rooms.map((room) => {
-                    return <Card room={room}/>;
-                })
+                rooms.map((room) => <Card key={room.id} room={room} />)
             }
         </StyledCardList>
     );
