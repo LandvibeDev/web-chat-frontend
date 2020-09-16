@@ -1,9 +1,7 @@
 # 소개
 > web chat application
 
-# 주요 기능
-
-> ...
+![](assets/web-chat.gif)
 
 # 프로젝트 구조
 
@@ -12,25 +10,33 @@
 ```
 ├───.github
 │   ├───ISSUE_TEMPLATE
-│   ├───workflows
+│   └───workflows
 ├───.storybook
 ├───public
 ├───src
 │   ├───__snapshots__
+│   ├───common
 │   ├───components
 │   │   ├───atoms
 │   │   ├───molecules
 │   │   └───organisms
+│   ├───css
 │   ├───mock
 │   │   ├───room
 │   ├───pages
+│   │   ├───chat
+│   │   │   └───room
+│   │   │       └───templates
+│   │   ├───error
+│   │   │   └───nomatch
+│   │   │       └───templates
 │   │   └───rooms
-│   │       ├───board
-│   │       │   ├───templates
-│   │       ├───maker
-│   │       │   ├───templates
+│   │   │   ├───board
+│   │   │   │   └───templates
+│   │   │   └───maker
+│   │   │       └───templates
 │   ├───service
-│   ├───utility
+│   └───utility
 ```
 
 
@@ -66,12 +72,14 @@
 ## 빌드
 > yarn build
 
-## 배포
-> ...
+## 테스트
+> yarn test
+>
+> yarn test -u
 
 # 협업 도구
 
-- [⚽ Storybook](https://5f33863115bb7700228d6fa0-loiziwqzld.chromatic.com/)
+- [⚽ Storybook](https://5f33863115bb7700228d6fa0-xspzuawezf.chromatic.com/)
 - [🏕 Chromatic](https://www.chromatic.com/library?appId=5f33863115bb7700228d6fa0)
 - [⛱ Slack](https://app.slack.com/client/TH6LT721Z/learning-slack)
 
